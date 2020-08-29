@@ -1,0 +1,42 @@
+ABX inc is a company that sells manufacturing equipment and it has collected data from all its operators across the world. It would like to study how likely is an operator about to meet an accident on its shopfloors.
+
+Input Format
+
+You can download the files from the following link:
+
+https://www.dropbox.com/s/0lwoyrsjx9amen9/Dataset.zip?dl=0
+
+The train data set is available in the file name "train_data.csv".
+
+The dataset comprises of the following columns:
+
+"code" "clientType" "registrationMode" "planName" "accident" "duration" "country" "netSales" "netProfit" "gender" "age"
+
+Accident is the column to be predicted.
+
+The test set is available in the file test_data.csv.
+
+You can run this locally, by downloading the dataset from the link given.
+
+Standard libraries and ML packages are allowed.
+
+Constraints
+
+Output should match the number of test cases available in test_data.csv
+
+Output Format
+
+Output prediction should be a probability value of class "1" , a value between 0 and 1, new line delimited for each row in the test data set.
+
+For a sample output , please check sample_output.txt in the ZIP file shared with the input data set.
+
+No column names need to be entered.
+
+There should be 3000 lines in the output file.
+
+Output can be uploaded as a text file into the console.
+
+Evaluation metric
+
+The output will be evaluated based on AUC metric.
+
