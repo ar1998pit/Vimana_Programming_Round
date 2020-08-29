@@ -1,0 +1,40 @@
+Let's split the natural Numbers into three types:
+
+Exact: A number for which the sum of its proper divisors is exactly equal to the number. For example, the sum of the proper divisors of 28 would be 1 + 2 + 4 + 7 + 14 = 28, which means that 28 is an Exact number.
+
+Scarce: A number n is called Scarce if the sum of its proper divisors is less than n. Example sum of proper divisors of 10 is 1 + 2 + 5 = 8, which makes 10 a Scarce number
+
+Plentiful: A number n is called Plentiful if the sum of its proper divisors is more than n. Example sum of proper divisors of 12 is 1 + 2 + 3 + 4 + 6 = 16, which means that 12 is a Plentiful number
+
+Given n, find the sum of all the Plentiful numbers less than or equal to n
+
+Input Format
+
+20
+
+Constraints
+
+n>2
+
+Output Format
+
+50
+
+Sample Input 0
+
+12
+Sample Output 0
+
+12
+Sample Input 1
+
+20
+Sample Output 1
+
+50
+Explanation 1
+
+12 + 18 + 20
+
+
+
