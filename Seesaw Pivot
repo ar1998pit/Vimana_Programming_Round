@@ -1,0 +1,42 @@
+Assume that you've a long board which is made up of individual links having different weights.
+
+--------- - Structure
+
+123247633 - Weights
+
+We can replace a link with a pivot to get a balanced seesaw. In this case
+
+--------- - Structure
+
+12324*633 - Weights with * representing pivot point
+
+As in the example If we replace the link with weight 7(at index 5, zero based indexing) with a pivot, we get a perfectly balanced see-saw.
+
+For an arbitrarily weighted see saw, find the pivot link index
+
+Input Format
+
+Input has two lines, first line the length of the see-saw(number of links). Second is a space separated weights of each link 9 1 2 3 2 4 7 6 3 3
+
+Constraints
+
+3 ≤ n ≤ 1000
+It is guaranteed that a solution always exists.
+Output Format
+
+Index of the link where the pivot should be placed 5
+
+Sample Input 0
+
+3
+1 2 1
+Sample Output 0
+
+1
+Sample Input 1
+
+9
+1 2 3 2 4 7 6 3 3
+Sample Output 1
+
+5
