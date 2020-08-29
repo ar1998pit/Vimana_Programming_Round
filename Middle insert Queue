@@ -1,0 +1,44 @@
+I am sure you are all familiar with the two standard queue implementations. FIFO and LIFO. Think about an implementation where a new person who comes into the queue is added to the middle of the queue.
+
+In case of odd number of people in the queue, the person is added to the (n+1)/2 th index, starting from index 0
+
+This is how the queue would grow assuming no one goes out - Incoming entires are numbered a through z
+
+a
+
+a b
+
+a c b
+
+a c d b
+
+a c e d b
+
+a c e f d b
+
+Assuming there are no exits (people keep waiting in the queue indefinitely), find out the final queue structure.
+
+Input Format
+
+6
+
+Constraints
+
+n > 0, n<=26
+
+Output Format
+
+a c e f d b
+
+Sample Input 0
+
+1
+Sample Output 0
+
+a
+Sample Input 1
+
+6
+Sample Output 1
+
+a c e f d b
