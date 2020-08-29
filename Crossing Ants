@@ -1,0 +1,39 @@
+An army of ants army are going to fetch food at the opposite end of a thin twig
+
+Nest->  a1a2a3 ->     (Food*) 
+------------------------
+Each ant goes pick up a piece of food and comes back the same way. En route, she headbutts with each of the ants coming in the opposte way.
+
+a1  a2  a3
+------------------------
+
+a1  a2a3*
+------------------------
+
+a1a3*  a2
+------------------------
+
+a3  a1a2*
+------------------------
+In the above case with 3 ants there are totally three headbutts represented by the *
+
+What is the total number of headbutts for an army of ants of size n assuming each ant does a single trip from Nest to Food and home?
+
+Input Format
+
+3
+
+Constraints
+
+n > 0
+
+Output Format
+
+3
+
+Sample Input 0
+
+5
+Sample Output 0
+
+10
