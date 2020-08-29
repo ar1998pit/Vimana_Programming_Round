@@ -38,3 +38,69 @@ Explanation 1
 
 
 
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+class Result {
+
+    /*
+     * Complete the 'find_plentiful_numbers' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts INTEGER n1 as parameter.
+     */
+public static int divide(int n) {
+    int sum=0;
+    int j=1;
+    while(j<=n/2)
+    {
+        if(n%j==0)
+            sum+=j;
+        j++;
+    }
+    if(sum>n)
+        return 1;
+    
+    else return 0;
+    
+}
+    public static int find_plentiful_numbers(int n1) {
+    int plenty=0;
+     for(int i=1;i<=n1;i++) { 
+         if(divide(i)==1)
+             plenty+=i;
+     }
+   return plenty;
+}
+}
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        int n = Integer.parseInt(bufferedReader.readLine().trim());
+
+        int output = Result.find_plentiful_numbers(n);
+
+        bufferedWriter.write(String.valueOf(output));
+        bufferedWriter.newLine();
+
+        bufferedReader.close();
+        bufferedWriter.close();
+    }
+}
+
+
