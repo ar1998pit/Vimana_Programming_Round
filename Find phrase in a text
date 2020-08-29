@@ -1,0 +1,78 @@
+"Once upon a time in a castle far away lived a giant monster A castle in such a mountain was one of its kind"
+
+In the above paragraph the phrase "in a castle" occurs 2 times, once directly in the first sentence and once in the beginning of the 2nd sentence, as "A castle in" can be rearranged to "in a castle" ignoring the capitalization.
+
+Note 1: You are expected to find all the possible ways a phrase can match in the text after reordering the phrase in all possible ways.
+
+So
+
+in a castle
+in castle a
+a in castle
+a castle in
+castle in a
+castle a in
+are all possible matches for the phrase
+
+Note 2: Matching a phrase is not case sensitive.
+
+So
+
+in A CastLE 
+should be considered same as
+
+in a cASTLE
+in the test cases.
+
+Note 3: Empty white space can be ignored. So
+
+in      a castle 
+should be considered same as
+
+in a castle
+in the test cases.
+
+Note 4: There won't be any punctuation in the text or the phrase in any of the test cases.
+
+Input Format
+
+First line is a string which is the phrase that has to be detected
+
+Second line is a string which the full text in which the phrase has to be detected
+
+Constraints
+
+All inputs are strings, no punctuations in the strings
+
+Output Format
+
+integer
+
+Sample Input 0
+
+aa bb
+aa bb cc dd aa bb dd
+Sample Output 0
+
+2
+Sample Input 1
+
+In a castle
+In a castle far away there lived a giant monster      A castle in such a remote place was one of its kind         A castle where nobody else lived you could hear the screams of people who wandered off thinking    WHO WOULD LIVE HERE        A CASTLE in a mountain fascinated many people        
+Sample Output 1
+
+4
+Sample Input 2
+
+aa bb cc
+aa bb cc aa bb cc   
+Sample Output 2
+
+4
+Sample Input 3
+
+foo foo
+foo foo foo foo foo
+Sample Output 3
+
+4
